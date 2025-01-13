@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        body h1{
+            background: rgb(120, 0, 233);
+            color: rgb(170, 255, 0);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        body h2{
+            background: #7cc507;
+            color: rgb(255, 0, 0);
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        body p{
+            border: 5px solid green;
+            font-size: 22px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .pseudo-element-1::selection{
+            color: red;
+            background: #000;
+        }
+        .pseudo-element-2::first-line{
+            background: #000;
+            color: red;
+            font-size: 40px;
+        }
+        .pseudo-element-3::first-letter{
+            font-style: italic;
+            font-size: 50px;
+            color: red;
+            background: #000;
+        }
+        .pseudo-element-4::before{
+            content: url(assets/ring.svg);
+        }
+        .pseudo-element-5::after{
+            content: url(assets/ring.svg);
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Pseudo Element - 01</h1>
+        <h2>Selection::</h2>
+        <p class="pseudo-element-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga vero inventore perferendis explicabo doloremque voluptatibus blanditiis neque velit distinctio ipsa sed voluptates, autem dicta praesentium, provident consectetur eligendi soluta perspiciatis dolore, sequi quae dolor. Fuga at omnis dolores necessitatibus ea vel neque totam autem? Officia a quos deleniti commodi iste!</p>
+    </div>
+    <div>
+        <h1>Pseudo Element - 02</h1>
+        <h2>First-Line::</h2>
+        <p class="pseudo-element-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga vero inventore perferendis explicabo doloremque voluptatibus blanditiis neque velit distinctio ipsa sed voluptates, autem dicta praesentium, provident consectetur eligendi soluta perspiciatis dolore, sequi quae dolor. Fuga at omnis dolores necessitatibus ea vel neque totam autem? Officia a quos deleniti commodi iste!</p>
+    </div>
+    <div>
+        <h1>Pseudo Element - 03</h1>
+        <h2>First-Letter::</h2>
+        <p class="pseudo-element-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga vero inventore perferendis explicabo doloremque voluptatibus blanditiis neque velit distinctio ipsa sed voluptates, autem dicta praesentium, provident consectetur eligendi soluta perspiciatis dolore, sequi quae dolor. Fuga at omnis dolores necessitatibus ea vel neque totam autem? Officia a quos deleniti commodi iste!</p>
+    </div>
+    <div>
+        <h1>Pseudo Element - 04</h1>
+        <h2>Before::</h2>
+        <p class="pseudo-element-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga vero inventore perferendis explicabo doloremque voluptatibus blanditiis neque velit distinctio ipsa sed voluptates, autem dicta praesentium, provident consectetur eligendi soluta perspiciatis dolore, sequi quae dolor. Fuga at omnis dolores necessitatibus ea vel neque totam autem? Officia a quos deleniti commodi iste!</p>
+    </div>
+    <div>
+        <h1>Pseudo Element - 05</h1>
+        <h2>After::</h2>
+        <p class="pseudo-element-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga vero inventore perferendis explicabo doloremque voluptatibus blanditiis neque velit distinctio ipsa sed voluptates, autem dicta praesentium, provident consectetur eligendi soluta perspiciatis dolore, sequi quae dolor. Fuga at omnis dolores necessitatibus ea vel neque totam autem? Officia a quos deleniti commodi iste!</p>
+    </div>
+
+</body>
+</html>
