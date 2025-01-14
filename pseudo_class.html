@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        body h1{
+            background: #000;
+            color: whitesmoke;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .hover-div{
+            background: yellow;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 30px;
+        }
+        .hover-div:hover{
+            background: #000;
+            color: red;
+            transition: 0.5s;
+        }
+        .hover-div h2:hover{
+            background: yellow;
+        }
+        .tooltip{
+            border: 5px solid red;
+            padding: 30px;
+            margin: 30px;
+            text-align: center;
+        }
+        .tooltip button{
+            padding: 15px 35px;
+            font-size: 20px;
+            font-weight: bold;
+            background: greenyellow;
+            border-radius: 5px;
+            border: 3px solid blueviolet;
+            margin: 0px 30px;
+        }
+        .tooltip img{
+            margin: 20px 20px;
+            border: 5px solid tomato;
+            padding: 30px;
+        }
+        .tooltip .gift-box{
+            text-align: center;
+        }
+        .tooltip .gift-box h3{
+            font-size: 40px;
+            color: red;
+        }
+        .tooltip .gift-box{
+            display: none;
+        }
+        .tooltip:hover .gift-box{
+            display: block;
+            transition: 0.9s;
+        }
+        .form #input-field:focus{
+            background: #000;
+            color: red;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .form > a{
+           text-decoration: none;
+           border: 2px solid dashed red;
+           padding: 20px;
+           display: inline-block;
+           font-size: 20px;
+           font-weight: 700;
+           color: blue;
+        }
+        .form > a:visited{
+            color: red;
+        }
+        .parent{
+            width: 500px;
+            background: #db7705;
+            padding: 30px;
+            margin-top: 20px;
+            border: 5px solid black;
+        }
+        .parent ul:first-child{
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-div">
+        <h2>Hover Effect</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique illum tempora culpa a ipsa, quos cum natus quae obcaecati omnis.</p>
+    </div>
+
+    <div class="tooltip">
+        <h1>Simple Tooltip Hover</h1>
+        <div class="gift-box">
+            <h3>Congratulations!</h3>
+            <img src="assets/ring.svg" alt="">
+        </div>
+        <div id="Open-btn">
+            <button>Open Gift Box</button>
+        </div>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Enter your name" style="display: block; width: 50%; padding: 20px; font-size: 20px; font-weight: 600;" id="input-field"><br><br>
+        <a href="https://www.Google.com/mail" target="_blank">Google Mama</a>
+    </div>
+    <div class="parent">
+        <ul>
+            <li>List - 1</li>
+            <li>List - 2</li>
+            <li>List - 3</li>
+            <li>List - 4</li>
+        </ul>
+        <!-- <h1>Parent Div</h1>
+        <div class="child1">
+            <h2>child1</h2>
+        </div>
+        <div class="child2">
+            <h2>child2</h2>
+        </div>
+        <div class="child3">
+            <h2>child3</h2>
+        </div>
+        <div class="child4">
+            <h2>child4</h2>
+        </div>
+        <div class="child5">
+            <h2>child5</h2>
+        </div>
+        <div class="child6">
+            <h2>child6</h2>
+        </div> -->
+    </div><br><br>
+
+
+</body>
+</html>
